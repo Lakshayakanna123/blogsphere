@@ -20,6 +20,32 @@
 # production
 /build
 
+# env — never commit secrets
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# Supabase local dev
+/supabase/.temp/
+/supabase/.branches/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+/build
+
 # misc
 .DS_Store
 *.pem
